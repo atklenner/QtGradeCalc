@@ -25,7 +25,12 @@ if(ui->radioButton->isChecked()){
             + (ui->midterm_1->value()) * 0.20 + (ui->midterm_2->value()) * 0.20
             + (ui->final_2->value()) * 0.35;
 } else {
-    score = 10;
+    score = (ui->hw_1->value() + ui->hw_2->value()
+            + ui->hw_3->value() + ui->hw_4->value()
+            + ui->hw_5->value() + ui->hw_6->value()
+            + ui->hw_7->value() + ui->hw_8->value()) * 0.25
+            + (ui->midterm_1->value()) * 0.30
+            + (ui->final_2->value()) * 0.44;
 }
     ui->lcdNumber->display(QString::number(score));
 
