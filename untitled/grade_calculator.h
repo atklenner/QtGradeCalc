@@ -1,4 +1,0 @@
-#ifndef GRADE_CALCULATOR_H
-#define GRADE_CALCULATOR_H
-
-#endif // GRADE_CALCULATOR_H
